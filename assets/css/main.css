@@ -3271,12 +3271,10 @@ table.alt tbody tr td {
 }
 
 .pagination .previous:before {
-  content: "\f104";
   margin-right: 0.9375em;
 }
 
 .pagination .next:before {
-  content: "\f105";
   float: right;
   margin-left: 0.9375em;
 }
@@ -3297,16 +3295,44 @@ table.alt tbody tr td {
 
 .pagination a,
 .pagination span {
-  border-color: #eeeeee;
+  border-width: 1.1px;
+  border-style: solid;
+  padding: 8px 12px; /* Sesuaikan dengan kebutuhan Anda */
+  margin: 2px; /* Sesuaikan dengan kebutuhan Anda */
+  display: inline-block;
+  border-color: #dbdbdb;
+  animation: borderBlink 2s infinite; /* Sesuaikan durasi sesuai kebutuhan Anda */
+}
+.pagination:hover{
+  background-color:#808080;
 }
 
+@keyframes borderBlink {
+  0%, 100% {
+    border-color: #dbdbdb;
+  }
+  25% {
+    border-color: red;
+  }
+  50% {
+    border-color: blue;
+  }
+  75% {
+    border-color: yellow;
+  }
+  100%{
+    border-color: #01e901;
+  }
+}
+
+
 .pagination a {
-  color: #212931 !important;
+  color: #1b1d1f !important;
 }
 
 .pagination a:hover {
-  color: #18bfef !important;
-  border-color: #18bfef;
+  color: #ffffff !important;
+  border-color: #18bfef ;
   z-index: 1;
 }
 
