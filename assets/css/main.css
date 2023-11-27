@@ -4835,3 +4835,26 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     visibility: visible;
   }
 }
+
+.actions p{
+  margin-bottom: 0;
+  margin-top: -25px;
+  margin-left: 1em;
+  margin-right: 6em;
+}
+
+@media screen and (max-width: 980px){
+  .actions p{
+    font-size: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 736px){
+  .actions p{
+    margin-top: -12px;
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
