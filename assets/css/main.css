@@ -4776,7 +4776,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   right: 0;
   text-align: right;
   top: 0;
-  vertical-align: middle;
+  display: block;
   width: 7rem;
 }
 
@@ -4838,11 +4838,33 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 .actions p{
   margin-bottom: 0;
-  margin-top: -25px;
+  margin-top: -10px;
   margin-left: 1em;
   margin-right: 6em;
 }
+.actions li a {
+  margin-left: 2%;
+  margin-top: 10px;
+}
 
+@media screen and (max-width: 1080px){
+  .actions{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .actions p{
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 16px;
+   
+  }
+  .actions li a{
+    margin-left: 2%;
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 980px){
   .actions p{
     font-size: 15px;
@@ -4852,9 +4874,13 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 @media screen and (max-width: 736px){
   .actions p{
-    margin-top: -12px;
+    margin-top: -17px;
     font-size: 14px;
-    margin-left: 0;
+    margin-left: -20px;
     margin-right: 0;
+  }
+  .actions li a{
+    margin-left: 0;
+    margin-top: 5px;
   }
 }
