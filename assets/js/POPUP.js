@@ -1824,7 +1824,7 @@
       allowEnterKey: !0,
       stopKeydownPropagation: !0,
       keydownListenerCapture: !1,
-      showConfirmButton: !1,
+      showConfirmButton: !0,
       showDenyButton: !1,
       showCancelButton: !1,
       preConfirm: void 0,
