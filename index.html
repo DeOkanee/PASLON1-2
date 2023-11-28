@@ -124,6 +124,27 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/RAGU.js"></script>
 			<script src="assets/js/POPUP.js"></script>
-			
+			<script>
+				const swals = Swal.mixin({
+				cancelButtonColor: "#DC143C",
+				confirmButtonColor: "#00008B",
+				allowOutsideClick: true,
+			  });
+		
+				async function start() {
+				const imageUrl = '/images/debat1.jpg'
+				  await swals.fire({
+					imageUrl: imageUrl,
+					  imageWidth: 400,
+					 imageHeight: 200,
+					 imageAlt: 'Custom image',
+				
+				  text: "Saksikan Debat Kampanye Pada Tanggal 30 November 2023, \n Tempat Di UHN I Gusti Bagus Sugriwa Denpasar Kampus Bangli.  ",
+				  });
+				  setTimeout(mulai, 900);
+				  play();
+				}
+				start();
+			  </script>
 	</body>
 </html>
